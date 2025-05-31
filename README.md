@@ -1,10 +1,42 @@
-# PHP Assignment 2 - SportsPro Technical Support
+# SportsPro Technical Support
 
-This project is a web-based technical support system developed using PHP and MySQL. It features distinct login areas for administrators, technicians, and customers, each with session-based authentication and role-specific access. The application is designed to run on XAMPP with Apache and MySQL, and includes a SQL script to initialize the database. The project structure is organized into folders such as `admin`, `technician_manager`, `customer`, `model`, and `view` for better modularity and maintainability.
+This is a web-based application developed in PHP and MySQL to manage technical support incidents for a hypothetical software company called *SportsPro*. The system is designed to help administrators, technicians, and customers interact with the company's technical support services.
 
-## How to Run
+## 🔧 Features
 
-1. Import the provided `techsupport.sql` file into your MySQL database.
-2. Place the project folder inside your XAMPP `htdocs` directory.
-3. Start Apache and MySQL services from the XAMPP control panel.
-4. Open a browser and navigate to `http://localhost/PHP_Assignment_2/tech_support/`.
+- **Admin Area**
+  - Manage products
+  - Manage customers
+  - Manage technicians
+
+- **Technician Area**
+  - View and update assigned incidents
+
+- **Customer Area**
+  - Register purchased products
+  - View past support requests
+
+## 🗂 Database
+
+The application uses a MySQL database called `tech_support`, which contains the following tables:
+
+- `customers`
+- `products`
+- `technicians`
+- `incidents`
+- `registrations`
+- `countries`
+- `administrators`
+
+You can restore the database using the provided `tech_support.sql` file via phpMyAdmin.
+
+## 🖥 Technologies Used
+
+- PHP (Core backend logic)
+- MySQL (Database)
+- HTML/CSS (Frontend, styled with `main.css`)
+- XAMPP (Local server environment)
+
+## 📁 Project Structure
+
+Each module (Admin, Technician, Customer) is organized into separate directories for maintainability.
